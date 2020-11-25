@@ -15,7 +15,7 @@ In this version you can adjust:
 - Change the direction of the shadow.
 - Functions of the sections and central button.
 
-<img src="https://github.com/GeekAbdelouahed/flutter-reaction-button/raw/master/images/Flutter-Reaction-Button-Check.gif"/>
+<img src="images/example.gif"/>
 
 ## Usage
 To use this plugin, add `control_button` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
