@@ -5,7 +5,7 @@
 import 'package:flutter/material.dart';
 import 'coordinates_processing.dart';
 
-/// Control button widget
+/// Control Button class that extends from StatelessWidget.
 class ControlButton extends StatelessWidget {
   final double elevation;
   final Color externalColor;
@@ -17,6 +17,11 @@ class ControlButton extends StatelessWidget {
   final double sectionOffset;
   final List<Function> sections;
 
+  /// ControlButton constructor.
+  /// Required variables: sections<List<Function>>, mainAction<Function>,
+  /// externalDiameter<double>, internalDiameter<double>.
+  /// You can also change: externalColor, internalColor, elevation,
+  /// shadowDirection and even sectionOffset.
   ControlButton({
     this.elevation = 1.5,
     this.sectionOffset = 0,

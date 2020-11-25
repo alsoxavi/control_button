@@ -5,17 +5,22 @@
 import 'dart:math';
 import 'package:flutter/foundation.dart';
 
+/// Coordinates class for parsing TapUpDetails elements.
 class Coordinates {
   final double posx;
   final double posy;
 
+  /// Coordinates constructor.
   Coordinates({
     @required this.posx,
     @required this.posy,
   });
 }
 
+/// CoordinatesProcessiong class.
+/// Includes functions related to processing elements of the class Coordinates and returns an angle in degrees.
 class CoordinatesProcessing {
+  /// This function uses linear ecuation created from two points to map the input number to the output.
   double _numberMap({
     @required double input,
     @required double inputMin,
@@ -29,6 +34,7 @@ class CoordinatesProcessing {
         outputMin;
   }
 
+  /// This function converts an objtect of the class Coordinates into an angle in degrees, from the positive x axis.
   double getAngle(Coordinates coordinates) {
     double position;
     double x = _numberMap(
