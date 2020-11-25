@@ -1,8 +1,8 @@
 name: control_button
-description: A new Flutter package project.
+description: Control button with adjustable sections
 version: 0.0.1
-author:
-homepage:
+author: alsoxavi
+homepage: flutter.version-one.com
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

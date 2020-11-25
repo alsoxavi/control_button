@@ -1,14 +1,16 @@
 # control_button
 
-A new Flutter package project.
+Control button with adjustable sections
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+This widget will allow you to create templates for different kind of controllers.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+In this version you can adjust:
+- Elevation of the buttons.
+- Size of the central button.
+- Size of the external buttons.
+- Color of the central button.
+- Color of the external buttons.
+- Change the direction of the shadow.
+- Functions of the sections and central button.
