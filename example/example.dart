@@ -25,7 +25,20 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatelessWidget {
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  String text = '';
+
+  void updateState(String showText) {
+    setState(() {
+      text = showText;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,16 +46,28 @@ class MyHomePage extends StatelessWidget {
         title: Text('Control Button'),
       ),
       body: Center(
-        child: ControlButton(
-          sectionOffset: 45,
-          externalDiameter: 300,
-          internalDiameter: 120,
-          mainAction: () => print('Selected Center'),
-          sections: [
-            () => print('Selected 1'),
-            () => print('Selected 2'),
-            () => print('Selected 3'),
-            () => print('Selected 4'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            ControlButton(
+              sectionOffset: 45,
+              externalDiameter: 300,
+              internalDiameter: 120,
+              mainAction: () => updateState('Selected Center'),
+              sections: [
+                () => updateState('Selected 1'),
+                () => updateState('Selected 2'),
+                () => updateState('Selected 3'),
+                () => updateState('Selected 4'),
+              ],
+            ),
+            Text(
+              text,
+              style: TextStyle(
+                fontSize: 24,
+                color: Theme.of(context).accentColor,
+              ),
+            ),
           ],
         ),
       ),

@@ -1,8 +1,7 @@
 name: control_button
 description: Control button with adjustable sections
 version: 0.0.1
-author: alsoxavi
-homepage: flutter.version-one.com
+homepage: https://flutter.version-one.com
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
