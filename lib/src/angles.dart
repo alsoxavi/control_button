@@ -7,10 +7,10 @@ import 'dart:math';
 /// FixedAngles enum that includes common angles for the ControlButton.
 enum FixedAngles {
   Zero,
-  Rectangular,
+  Rectangular90,
   Inclined45,
   Inclined120,
-  Plane,
+  Plane180,
 }
 
 /// Angles class provides helpers to convert FixedAngles to degrees or radians.
