@@ -4,7 +4,6 @@
 
 import 'package:flutter/material.dart';
 
-// import '../lib/control_button.dart';
 import 'package:control_button/control_button.dart';
 
 void main() {
@@ -51,9 +50,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             ControlButton(
-              sectionOffset: 45,
+              sectionOffset: FixedAngles.Zero,
               externalDiameter: 300,
               internalDiameter: 120,
+              dividerColor: Colors.blue,
+              elevation: 2,
+              externalColor: Colors.lightBlue[100],
+              internalColor: Colors.grey[300],
               mainAction: () => updateState('Selected Center'),
               sections: [
                 () => updateState('Selected 1'),

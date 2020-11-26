@@ -15,7 +15,7 @@ In this version you can adjust:
 - Change the direction of the shadow.
 - Functions of the sections and central button.
 
-<img src="https://media.githubusercontent.com/media/alsoxavi/control_button/master/images/example.gif"/>
+<img src="https://flutter.version-one.com/packages/control_button/example.gif"/>
 
 ## Usage
 To use this plugin, add `control_button` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
