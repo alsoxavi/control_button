@@ -1,6 +1,6 @@
 name: control_button
-description: Control button with adjustable sections
-version: 0.0.1
+description: Create a custom Control Button with different sections actions and a central button. Perfect for remote controls or directional input.
+version: 0.0.2
 homepage: https://flutter.version-one.com
 
 environment:
